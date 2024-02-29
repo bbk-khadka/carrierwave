@@ -262,7 +262,8 @@ module CarrierWave
       @content_type ||=
         existing_content_type ||
         marcel_magic_content_type ||
-        mini_mime_content_type
+        mini_mime_content_type ||
+        Marcel::MimeType::BINARY
     end
 
     ##
